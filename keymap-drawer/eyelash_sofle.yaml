@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
-  '0':
+  BASE:
   - {t: '`', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -27,7 +27,7 @@ layers:
   - O
   - P
   - {t: \, s: '|'}
-  - $$mdi:apple-keyboard-caps$$
+  - '&mcaps'
   - A
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: LGUI}
@@ -57,15 +57,15 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - LGUI
   - $$mdi:keyboard-space$$
-  - '1'
+  - NAV
   - $$mdi:keyboard-esc$$
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:keyboard-esc$$
-  - '2'
+  - FN
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-option$$
   - {t: '-', s: _}
-  '1':
+  NAV:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
   - F2
@@ -112,9 +112,9 @@ layers:
   - $$mdi:skip-previous$$
   - $$mdi:skip-next$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - {t: '0', h: toggle}
-  - {t: '1', h: toggle}
-  - {t: '3', h: toggle}
+  - {t: BASE, h: toggle}
+  - {t: NAV, h: toggle}
+  - {t: SYS, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -130,7 +130,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  '2':
+  FN:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
   - F2
@@ -177,9 +177,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - {t: '0', h: toggle}
-  - {t: '1', h: toggle}
-  - {t: '3', h: toggle}
+  - {t: BASE, h: toggle}
+  - {t: NAV, h: toggle}
+  - {t: SYS, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -195,7 +195,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  '3':
+  SYS:
   - {t: '$$mdi:transfer$$', type: trans}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
@@ -242,9 +242,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - OUT BLE
   - RGB SAI
-  - {t: '0', h: toggle}
-  - {t: '1', h: toggle}
-  - {t: '3', h: toggle}
+  - {t: SYS, h: toggle}
+  - {t: NAV, h: toggle}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -263,16 +263,16 @@ layers:
 combos:
 - p: [40, 41]
   k: Ctl+A
-  l: ['0']
+  l: [BASE]
 - p: [41, 42]
   k: Ctl+C
-  l: ['0']
+  l: [BASE]
 - p: [42, 43]
   k: Ctl+V
-  l: ['0']
+  l: [BASE]
 - p: [47, 48]
   k: {h: '[', s: '{'}
-  l: ['0']
+  l: [BASE]
 - p: [48, 49]
   k: {h: ']', s: '}'}
-  l: ['0']
+  l: [BASE]
