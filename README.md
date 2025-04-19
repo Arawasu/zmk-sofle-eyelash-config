@@ -11,7 +11,7 @@ This is a heavily modified fork of [`a741725193/zmk-sofle`](https://github.com/a
 - **Lighting**: WS2812 RGB per-key LEDs underglow.
 - **Other**: 2000mAh battery
 
-## 🪰 Firmware Details
+## 💾 Firmware Details
 - **Base**: [ZMK Firmware](https://zmk.dev)
 - **Forked from**: [`a741725193/zmk-sofle`](https://github.com/a741725193/zmk-sofle)
 - **Notable Changes**:
